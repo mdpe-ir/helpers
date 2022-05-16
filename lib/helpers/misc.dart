@@ -359,10 +359,10 @@ class Misc {
 
   ///DO THAT:
   ///```dart
-  /// WidgetsBinding.instance?.addPostFrameCallback((_) => callback());
+  /// WidgetsBinding.instance.addPostFrameCallback((_) => callback());
   /// ```
   static void onLayoutRendered(void Function() callback) {
-    WidgetsBinding.instance?.addPostFrameCallback((_) => callback());
+    WidgetsBinding.instance.addPostFrameCallback((_) => callback());
   }
 
   ///DO THAT:
