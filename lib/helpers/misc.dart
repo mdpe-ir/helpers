@@ -367,10 +367,10 @@ class Misc {
 
   ///DO THAT:
   ///```dart
-  /// WidgetsBinding.instance?.endOfFrame.then((_) => callback());
+  /// WidgetsBinding.instance.endOfFrame.then((_) => callback());
   /// ```
   static void afterFirstLayout(void Function() callback) {
-    WidgetsBinding.instance?.endOfFrame.then((_) => callback());
+    WidgetsBinding.instance.endOfFrame.then((_) => callback());
   }
 
   ///DO THAT:
